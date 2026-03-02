@@ -12,17 +12,14 @@ public class UseCase9PalindromeCheckerApp {
 
     public static boolean isPalindrome(String str, int left, int right) {
 
-        // Base case
         if (left >= right) {
             return true;
         }
 
-        // If characters don't match
         if (str.charAt(left) != str.charAt(right)) {
             return false;
         }
 
-        // Recursive call
         return isPalindrome(str, left + 1, right - 1);
     }
 }
